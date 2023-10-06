@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Alura Parte2</title>
+
+    <link rel="stylesheet" href="./produtos.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="caixa">
+            <h1><img src="logo.png"></h1>
+
+            <nav>
+                <ul>
+                    <li>
+                      <a href="index.html">Home  </a>
+                    </li>
+
+                    <li>
+                      <a href="produtos.html">Produtos  </a>
+                    </li>
+
+                    <li>
+                      <a href="contato.html">Contato</a>
+                    </li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <ul class="produtos">
+            <li>
+            <h2>Cabelo</h2>
+            <img src="./cabelo.jpg">
+            <p class="produto-descricao">Na tesoura pu máquina, como o cliente preferir</p>
+            <p class="produto-preco">R$ 25,00</p>
+            </li>
+
+            <li>
+            <h2>Barba</h2>
+            <img src="./barba.jpg">
+            <p class="produto-descricao">Corte de desenho profisional de barba</p>
+            <p class="produto-preco">R$ 18,00</p>
+            </li>
+
+            <li>
+            <h2>Cabelo + Barba</h2>
+            <img src="./cabelo+barba.jpg">
+            <p class="produto-descricao">Pacote completo de cabelo e barba</p>
+            <p class="produto-preco">R$ 35,00</p>
+            </li>
+
+        </ul>
+    </main>
+    
+</body>
+</html>
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    border: 4px solid blueviolet;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    max-width: 0 0 0 15px;
+} 
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+/*-------------------------------------------------------*/
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 4px solid blueviolet;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: blueviolet;
+}
